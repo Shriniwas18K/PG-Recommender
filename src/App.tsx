@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Auth from './Auth';
+import PropertyForm from './PropertyForm';
 function App() {
   const [token, setToken] = useState<string>('');
   const handleTokenFromAuth = (data:string) => {
@@ -11,7 +12,7 @@ function App() {
   }else{
     return(
       <>
-        <h1>welcome to platform</h1>
+        <PropertyForm />
       </>
     )
   }

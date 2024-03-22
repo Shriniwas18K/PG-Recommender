@@ -1,29 +1,15 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
+import { useState } from "react";
+
+export default function PropertyForm() {
+  const [formData,setFormData]=useState({ phone: "", username: "", password: "" })
+  async function submitted(e) {
+   e.preventDefault();
+    console.log(FormData);
   }
-  ```
-*/
-import { useState } from 'react'
-// import { Switch } from '@headlessui/react'
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-export default function Example() {
-  const [agreed, setAgreed] = useState(false)
-async function submitted(e) {
-  e.preventDefault();
-}
+  const handleChange = (event: any) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
@@ -32,41 +18,41 @@ async function submitted(e) {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Enter Property Details</h2>
       </div>
-      <form onSubmit={submitted}  method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={submitted} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="Address" className="Address">
+            <label htmlFor="address" className="Address">
               <b>Address</b>
             </label>
             <div className="mt-2.5">
               <input
                 type="text"
-                name="first-name"
-                id="first-name"
-                autoComplete="given-name"
+                name="address"
+                id="address"
+                autoComplete="address"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
             </div>
           </div>
           <div>
-            <label htmlFor="Pincode" className="code">
+            <label htmlFor="pincode" className="code">
               <b>pincode</b>
             </label>
             <div className="mt-2.5">
               <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                autoComplete="family-name"
+                type="number"
+                name="pincode"
+                id="pincode"
+                autoComplete="pincode"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
             </div>
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="noOfPeopleToAccomodate" className="noOfPeopleToAccomodate">
-              <b>noOfPeopleToAccomodate</b>
+              <b>no Of People To Accomodate</b>
             </label>
             <div className="mt-2.5">
               <input
-                type="text"
+                type="number"
                 name="noOfPeopleToAccomodate"
                 id="noOfPeopleToAccomodate"
                 autoComplete="organization"
@@ -75,11 +61,11 @@ async function submitted(e) {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="rentPerPerson" className="rentPerPerson">
-              <b>RentPerPerson</b>
+              <b>Rent Per Person</b>
             </label>
             <div className="mt-2.5">
               <input
-                type="rentPerPerson"
+                type="number"
                 name="rentPerPerson"
                 id="rentPerPerson"
                 autoComplete="rentPerPerson"
@@ -92,7 +78,7 @@ async function submitted(e) {
             </label>
             <div className="mt-2.5">
               <input
-                type="areaInSqft"
+                type="number"
                 name="areaInSqft"
                 id="areaInSqft"
                 autoComplete="areaInSqft"
@@ -105,7 +91,7 @@ async function submitted(e) {
             </label>
             <div className="mt- 2.5">
               <input
-                type="wifiFacility"
+                type="text"
                 name="wifiFacility"
                 id="wifiFacility"
                 autoComplete="wifiFacility"
@@ -114,11 +100,11 @@ async function submitted(e) {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="furnished" className="furnished">
-              <b>furnished</b>
+              <b>Is it furnished?</b>
             </label>
             <div className="mt- 2.5">
               <input
-                type="furnished"
+                type="text"
                 name="furnished"
                 id="furnished"
                 autoComplete="furnished"
@@ -131,7 +117,7 @@ async function submitted(e) {
             </label>
             <div className="mt- 2.5">
               <input
-                type="description"
+                type="text"
                 name="description"
                 id="description"
                 autoComplete="description"
