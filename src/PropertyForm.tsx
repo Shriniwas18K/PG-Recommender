@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropertyInputField from "./PropertyInputField";
+import ImageUploader from "./ImageUploader";
 export default function PropertyForm(props:any) {
   const [formData,setFormData]=useState(
       { 
@@ -12,6 +13,9 @@ export default function PropertyForm(props:any) {
         areaInSqft:0.0,
         wifiFacility:"",
         furnished:"",
+        url1:"",
+        url2:"",
+        url3:"",
         description:"",
       }
     )
@@ -43,6 +47,7 @@ export default function PropertyForm(props:any) {
           formattr={formData.furnished} changer={handleChange}/>
           <PropertyInputField Type="text" attr="description"
           formattr={formData.description} changer={handleChange}/>
+          <ImageUploader />
         </div>
         <div className="mt-10">
           <button
