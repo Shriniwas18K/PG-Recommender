@@ -120,10 +120,6 @@ export default function Auth({ sendDataToParent }){
                   />
                 </div>
               </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 8c3cffccacd48d9e1c2c8eeff9e8d860fd3b423b
               <div>
                 <button
                   type="submit"
@@ -133,10 +129,6 @@ export default function Auth({ sendDataToParent }){
                 </button>
               </div>
             </form>
-<<<<<<< HEAD
-=======
-
->>>>>>> 8c3cffccacd48d9e1c2c8eeff9e8d860fd3b423b
             <p className="mt-10 text-center text-sm text-gray-500">
               {smallline}?{' '}
               <button onClick={changeTitle} className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
