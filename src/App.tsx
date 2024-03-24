@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
 import Auth from './Auth';
-import PropertyForm from './PropertyForm';
+import Dashboard from './Dashboard/Dashboard';
+
 interface userdetail{
   token:string
   phone:string
@@ -16,15 +16,13 @@ function App() {
     setPhone(obj.phone);
     setUsername(obj.username);
   };
-  if(token===''){
-    return(<Auth sendDataToParent={handleFromAuth}/>)
-  }else{
+  // if(token===''){
+    // return(<Auth sendDataToParent={handleFromAuth}/>)
+  // }else{
     return(
-      <>
-        <PropertyForm phone={phone} username={username}/>
-      </>
+     <Dashboard/>
     )
-  }
+  // }
 }
 
 export default App

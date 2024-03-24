@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "../smpg-student/src/Visitor"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

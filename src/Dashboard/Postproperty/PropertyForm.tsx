@@ -25,13 +25,14 @@ export default function PropertyForm(props:any) {
   };
   function handlesubmit(){
       console.log(formData);
+      console.log(props.token);
   }
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Enter Property Details</h2>
+    <div className="isolate bg-white px-6 py-5 sm:py-32 lg:px-8">
+      <div className="mx-auto mt-20 max-w-2xl text-center">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Enter Property Details</h2>
       </div>
-      <form onSubmit={handlesubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={handlesubmit} className="mx-auto mt-10 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <PropertyInputField Type="text" attr="address" 
           formattr={formData.address} changer={handleChange}/>
