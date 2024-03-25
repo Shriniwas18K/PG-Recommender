@@ -4,13 +4,13 @@ import ImageUploader from "./ImageUploader";
 export default function PropertyForm({ token, phone, username }: { token: string, phone: string, username: string }) {
   const [formData, setFormData] = useState(
     {
-      phone: phone,
       username: username,
+      phone: phone,
       address: "",
       pincode: 0,
       noOfPeopleToAccomodate: 0,
       rentPerPerson: 0,
-      areaInSqft: 0.0,
+      areaInSqft: 0,
       wifiFacility: "",
       furnished: "",
       url1: "",
@@ -28,7 +28,7 @@ export default function PropertyForm({ token, phone, username }: { token: string
     event.preventDefault();
     formData.phone=phone;
     formData.username=username;
-    console.log(formData);
+    console.log(JSON.stringify(formData));
     // Construct the request URL with the token as a URL parameter
     const url = `https://smpg.onrender.com/postProperty/?token=${encodeURIComponent(token)}`;
     // Make a POST request with Fetch API
@@ -55,7 +55,9 @@ export default function PropertyForm({ token, phone, username }: { token: string
             formattr={formData.pincode} changer={handleChange} />
           <PropertyInputField Type="number" attr="noOfPeopleToAccomodate"
             formattr={formData.noOfPeopleToAccomodate} changer={handleChange} />
-          <PropertyInputField Type="number" attr="areaInsqft"
+          <PropertyInputField Type="number" attr="rentPerPerson"
+            formattr={formData.rentPerPerson} changer={handleChange}/>
+          <PropertyInputField Type="number" attr="areaInSqft"
             formattr={formData.areaInSqft} changer={handleChange} />
           <PropertyInputField Type="text" attr="wifiFacility"
             formattr={formData.wifiFacility} changer={handleChange} />
@@ -68,7 +70,7 @@ export default function PropertyForm({ token, phone, username }: { token: string
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            className="block w-full rounded-md bg-slate-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
             Submit the Form
           </button>
         </div>

@@ -17,7 +17,7 @@ export default function Dashboard({ token, phone, username }: { token: string, p
                 setContent(<PropertyForm token={token} phone={phone} username={username} />);
                 break;
             case 'CurrentProperties':
-                setContent(<CurrentProperties />);
+                setContent(<CurrentProperties token={token} phone={phone} username={username}/>);
                 break;
             case 'Help':
                 setContent(<Help />);
