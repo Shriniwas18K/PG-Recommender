@@ -4,10 +4,14 @@ export default function CurrentProperties(username:string,phone:string,token:str
     const [Properties,setProperties]=useState(undefined);
     async function getProperties() {
         const res=await fetch(
-            `https://smpg.onrender.com/getUserProperties/${token}/${username}/${phone}/`,
+            `https://smpg.onrender.com/getUserProperties/?token=${encodeURIComponent(token)}/`,
             {
                 method:'GET',
-                mode:'cors'
+                mode:'cors',
+                body:JSON.stringify({
+                    "username":username,
+                    "phone":phone
+                })
             }
         );
         console.log(res.json());

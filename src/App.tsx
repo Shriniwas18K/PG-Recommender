@@ -1,28 +1,22 @@
 import { useState } from 'react'
 import Auth from './Auth';
 import Dashboard from './Dashboard/Dashboard';
-
-interface userdetail{
-  token:string
-  phone:string
-  username:string
-}
 function App() {
   const [token, setToken] = useState<string>('');
   const [phone, setPhone]=useState<string>('');
   const [username, setUsername]=useState<string>('');
-  const handleFromAuth = (obj:userdetail) => {
-    setToken(obj.token); // Set the received data in the parent component's state
-    setPhone(obj.phone);
-    setUsername(obj.username);
+  const handleFromAuth = (tokenvalue:string,phonevalue:string,usernamevalue:string) => {
+    setToken(tokenvalue); // Set the received data in the parent component's state
+    setPhone(phonevalue);
+    setUsername(usernamevalue);
   };
-  // if(token===''){
-    // return(<Auth sendDataToParent={handleFromAuth}/>)
-  // }else{
+  if(token===''){
+    return(<Auth sendDataToParent={handleFromAuth}/>)
+  }else{
     return(
-     <Dashboard/>
+     <Dashboard token={token} phone={phone} username={username}/>
     )
-  // }
+  }
 }
 
 export default App

@@ -3,7 +3,7 @@ const ImageUploader = () => {
     const [selectedFiles, setSelectedFiles] = useState(null);
     const handleFileChange = (event:any) => {
         setSelectedFiles(event.target.files);
-        console.log(selectedFiles);
+        console.log(selectedFiles[0]);
     };
     return (
         <div>
@@ -13,4 +13,3 @@ const ImageUploader = () => {
 };
 
 export default ImageUploader;
-

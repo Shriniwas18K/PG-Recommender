@@ -48,7 +48,7 @@ export default function PropertyForm(props:any) {
           formattr={formData.furnished} changer={handleChange}/>
           <PropertyInputField Type="text" attr="description"
           formattr={formData.description} changer={handleChange}/>
-          <ImageUploader />
+          <ImageUploader token={props.token}/>
         </div>
         <div className="mt-10">
           <button

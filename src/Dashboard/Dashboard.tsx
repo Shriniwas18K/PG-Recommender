@@ -8,13 +8,13 @@ import Help from "./Help/Help";
 
 export default function Dashboard({ token, phone, username }: { token: string, phone: string, username: string }) {
     const [selectedComponent, setSelectedComponent] = useState<string>('PropertyForm');
-    const [content,setContent]=useState(<PropertyForm/>);
+    const [content,setContent]=useState(<PropertyForm token={token}/>);
     // Effect to handle navigation changes
     useEffect(() => {
         // Render component based on selected component
         switch (selectedComponent) {
             case 'PropertyForm':
-                setContent(<PropertyForm />);
+                setContent(<PropertyForm token={token} phone={phone} username={username} />);
                 break;
             case 'CurrentProperties':
                 setContent(<CurrentProperties />);
