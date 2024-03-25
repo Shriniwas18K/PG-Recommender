@@ -1,31 +1,46 @@
 import { useState } from "react";
 import PropertyInputField from "./PropertyInputField";
 import ImageUploader from "./ImageUploader";
-export default function PropertyForm(props:any) {
-  const [formData,setFormData]=useState(
-      { 
-        phone: props.phone, 
-        username: props.username,
-        address:"",
-        pincode:0,
-        noOfPeopleToAccomodate:0,
-        rentPerPerson:0,
-        areaInSqft:0.0,
-        wifiFacility:"",
-        furnished:"",
-        url1:"",
-        url2:"",
-        url3:"",
-        description:"",
-      }
-    )
+export default function PropertyForm({ token, phone, username }: { token: string, phone: string, username: string }) {
+  const [formData, setFormData] = useState(
+    {
+      phone: phone,
+      username: username,
+      address: "",
+      pincode: 0,
+      noOfPeopleToAccomodate: 0,
+      rentPerPerson: 0,
+      areaInSqft: 0.0,
+      wifiFacility: "",
+      furnished: "",
+      url1: "",
+      url2: "",
+      url3: "",
+      description: "",
+    }
+  )
   const handleChange = (event: any) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
-  function handlesubmit(){
-      console.log(formData);
-      console.log(props.token);
+
+  function handlesubmit(event:any) {
+    event.preventDefault();
+    formData.phone=phone;
+    formData.username=username;
+    console.log(formData);
+    // Construct the request URL with the token as a URL parameter
+    const url = `https://smpg.onrender.com/postProperty/?token=${encodeURIComponent(token)}`;
+    // Make a POST request with Fetch API
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },mode:'no-cors',
+      body: JSON.stringify(formData)
+    }).then(res=>{
+      console.log(res.json());
+    })
   }
   return (
     <div className="isolate bg-white px-6 py-5 sm:py-32 lg:px-8">
@@ -34,21 +49,21 @@ export default function PropertyForm(props:any) {
       </div>
       <form onSubmit={handlesubmit} className="mx-auto mt-10 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <PropertyInputField Type="text" attr="address" 
-          formattr={formData.address} changer={handleChange}/>
-          <PropertyInputField Type="number" attr="pincode" 
-          formattr={formData.pincode} changer={handleChange}/>
+          <PropertyInputField Type="text" attr="address"
+            formattr={formData.address} changer={handleChange} />
+          <PropertyInputField Type="number" attr="pincode"
+            formattr={formData.pincode} changer={handleChange} />
           <PropertyInputField Type="number" attr="noOfPeopleToAccomodate"
-          formattr={formData.noOfPeopleToAccomodate} changer={handleChange}/>
-          <PropertyInputField Type="text" attr="areaInsqft" 
-          formattr={formData.areaInSqft} changer={handleChange} />
+            formattr={formData.noOfPeopleToAccomodate} changer={handleChange} />
+          <PropertyInputField Type="number" attr="areaInsqft"
+            formattr={formData.areaInSqft} changer={handleChange} />
           <PropertyInputField Type="text" attr="wifiFacility"
-          formattr={formData.wifiFacility} changer={handleChange}/>
+            formattr={formData.wifiFacility} changer={handleChange} />
           <PropertyInputField Type="text" attr="furnished"
-          formattr={formData.furnished} changer={handleChange}/>
+            formattr={formData.furnished} changer={handleChange} />
           <PropertyInputField Type="text" attr="description"
-          formattr={formData.description} changer={handleChange}/>
-          <ImageUploader token={props.token}/>
+            formattr={formData.description} changer={handleChange} />
+          <ImageUploader token={token} />
         </div>
         <div className="mt-10">
           <button

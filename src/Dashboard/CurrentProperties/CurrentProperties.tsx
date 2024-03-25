@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function CurrentProperties(username:string,phone:string,token:string){
+export default function CurrentProperties({ token, phone, username }: { token: string, phone: string, username: string }){
     const [Properties,setProperties]=useState(undefined);
     async function getProperties() {
         const res=await fetch(
