@@ -1,4 +1,5 @@
 export default function CurrentProperties({ token, phone, username }: { token: string, phone: string, username: string }){
+    // console.log(token,phone,username);
     // const [Properties,setProperties]=useState(undefined);
     // async function getProperties() {
 /*        const res=await fetch(
