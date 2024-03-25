@@ -1,5 +1,5 @@
 import {useState} from 'react';
-const ImageUploader = () => {
+const ImageUploader = (token:string) => {
     const [selectedFiles, setSelectedFiles] = useState(null);
     const handleFileChange = (event:any) => {
         setSelectedFiles(event.target.files);
