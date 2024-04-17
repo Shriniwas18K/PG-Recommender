@@ -18,7 +18,7 @@ export default function CurrentProperties({ token, phone, username }: { token: s
     */
     const products=[
         ['dharmraj nagar,akurdi','./img1.jpg'],
-        ['sector 26,akurdi,pune','./img2.jpg'],
+        ['sector 26,akurdi,pune','./img2.jpeg'],
         ['sector 27,pimpri-chinchwad','./img3.jpg']
     ]
    const content=products.map((item,inasd)=>(
