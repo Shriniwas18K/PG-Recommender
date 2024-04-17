@@ -49,7 +49,7 @@ export default function Help() {
                             <p>Email: prajyot.kale22@pccoepune.org</p>
                         </div>
                     </div>
-                    <button className="bg-slate-900 rounded text-white"><a href='' >Chat with us</a></button>
+                    <button className="bg-slate-900 rounded text-white"><a href='https://chtb-2syd.onrender.com/' >Chat with us</a></button>
                 </div>
             </div>
             
