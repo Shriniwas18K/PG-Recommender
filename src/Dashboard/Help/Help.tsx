@@ -49,9 +49,10 @@ export default function Help() {
                             <p>Email: prajyot.kale22@pccoepune.org</p>
                         </div>
                     </div>
+                    <button className="bg-slate-900 rounded text-white"><a href='' >Chat with us</a></button>
                 </div>
             </div>
-
+            
 
             {/* <form action="submit_form.php" method="POST">
                 <div className="form-group">
