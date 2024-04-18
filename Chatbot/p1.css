@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: rgb(240, 240, 240); /* Light Gray */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(51, 51, 51); /* Dark Gray */
+  }
+  
+  .header-nav {
+    margin-left: auto;
+  }
+  
+  .header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .header-nav a {
+    text-decoration: none;
+    color: rgb(51, 51, 51); /* Dark Gray */
+  }
+  
+  .user-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    margin-right: 10px;
+  }
+  
+  .user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    text-decoration: none;
+    color: rgb(51, 51, 51); /* Dark Gray */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255); /* White */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .dropdown-menu li {
+    margin-bottom: 5px;
+  }
+  
+  nav {
+    background-color: rgb(238, 238, 238); /* Light Gray with a hint of blue */
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(51, 51, 51); /* Dark Gray */
+  }
+  
+  .active a {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 128, 255); /* Blue */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .content {
+    background-color: rgb(255, 255, 255); /* White */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: rgb(245, 245, 245); /* Light Gray */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+    width: calc(33% - 20px);
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    color: rgb(102, 102, 102); /* Dark Gray */
+  }
+  
