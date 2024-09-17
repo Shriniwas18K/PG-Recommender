@@ -51,8 +51,13 @@ const data={
 const Header: React.FC = () => {
   const theme = useTheme() as Theme;
 
+  const loginId=localStorage.getItem('appwriteId');
   const header = data.header;
   const menu = header.menu;
+  if(loginId){
+    menu[3].text='Dashboard';
+    menu[3].to='/dashboard/property/view-active-postings'
+  }
   const socialMediaIcons = header["social-media"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

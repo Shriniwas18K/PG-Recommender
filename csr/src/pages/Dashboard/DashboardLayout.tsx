@@ -3,7 +3,7 @@ import { Navigate,Outlet, useLoaderData } from "react-router-dom";
 import DrawerAppBar from "./shared/Nav/DrawerAppBar";
 import { account } from "../../utils/appwrite";
 export default function DashboardLayout() {
-  const activeUserOnDevice=useLoaderData();
+  const activeUserOnDevice=localStorage.getItem('appwriteId');
     useEffect(() => {
         const handleTabClose = event => {
           event.preventDefault();
