@@ -1,0 +1,15 @@
+html,body{
+  height: 100;
+  width: 100vw;
+  overflow-x: hidden;
+}
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+/* global app's used variables */
+:root {
+  --primary-color:#FFF8EA;
+  --secondary-color:#9E7676;
+  --tertiary-color:#594545;
+  --font-color:black;
+}

@@ -1,0 +1,11 @@
+{  
+  "hero": {
+    "heading": "Shelter",
+    "subheading": "Platform to bridge rent and search properties at your fingertips",
+    "feature1":"Intelligent search",
+    "feature2":"Smart chatbot",
+    "feature3":"Dashboard panel",
+    "feature4":"Secure authentication",
+    "feature5":"Data privacy"
+  }
+}

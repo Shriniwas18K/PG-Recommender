@@ -1,0 +1,69 @@
+{
+    "FAQs": {
+        "heading": "",
+        "subheading": "",
+        "questions-and-answers": [
+            {
+                "q": "What is Shelter?",
+                "a": "Shelter is a platform that provides property finding and posting services, powered by a chatbot to assist with your queries."
+            },
+            {
+                "q": "How do I register on Shelter?",
+                "a": "To register, click on the 'Sign Up' button on our website and fill out the registration form with your detls."
+            },
+            {
+                "q": "What types of properties are listed on Shelter?",
+                "a": "We have a wide range of properties, including apartments, houses, villas, and commercial spaces for rent and sale."
+            },
+            {
+                "q": "Can I post my property on Shelter?",
+                "a": "Yes, you can post your property on our platform by creating a listing and adding detls like photos, description, and pricing."
+            },
+            {
+                "q": "How do I contact a property owner or agent?",
+                "a": "You can contact them directly through our chatbot or by sending a message through the 'Contact' button on the property listing page."
+            },
+            {
+                "q": "Is my personal information safe on Shelter?",
+                "a": "Yes, we take data privacy seriously and have implemented measures to ensure your personal information is protected."
+            },
+            {
+                "q": "Can I search for properties based on my preferences?",
+                "a": "Yes, our chatbot allows you to search for properties based on your preferences like location, budget, and amenities."
+            },
+            {
+                "q": "How do I know if a property is avlable?",
+                "a": "Our chatbot updates property avlability in real-time, so you can check the status of a property instantly."
+            },
+            {
+                "q": "Can I schedule a property visit through Shelter?",
+                "a": "Yes, you can schedule a property visit by contacting the owner or agent through our chatbot."
+            },
+            {
+                "q": "Are there any fees for using Shelter?",
+                "a": "We offer both free and pd services. You can contact us to learn more about our pricing plans."
+            },
+            {
+                "q": "How do I report a fraudulent property listing?",
+                "a": "If you suspect a fraudulent listing, please report it to us immediately through our 'Report Abuse' button."
+            },
+            {
+                "q": "Can I save my favorite properties?",
+                "a": "Yes, you can bookmark your favorite properties and access them later through your account."
+            },
+            {
+                "q": "How do I contact Shelter customer support?",
+                "a": "You can reach us through our website, eml, or by chatting with our support team."
+            },
+            {
+                "q": "Is Shelter avlable on mobile devices?",
+                "a": "Yes, our platform is optimized for mobile devices, and you can access it through our mobile app or website."
+            },
+            {
+                "q": "Can I cancel or edit my property listing?",
+                "a": "Yes, you can manage your property listings through your account dashboard."
+            }
+        ],
+        "button-text": "More Info"
+    }
+}
