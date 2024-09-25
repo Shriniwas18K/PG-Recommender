@@ -331,12 +331,6 @@
 * Ratings (1-5 stars)
 * Contact Information (phone number, email)
 
-## Property Information
-
-* Property Type
-* Property Location
-* Property Price
-
 # Utility Screens 
 
 ## Agent Comparison
