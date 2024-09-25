@@ -1,6 +1,8 @@
 # Property Rental Platform Design
 
-## Home Screen/Landing Page
+
+
+## Home Screen
 
 ### Header
 
@@ -24,6 +26,8 @@
 	+ Property Title
 	+ Price
 	+ Location
+
+
 
 ## Search Screen
 
@@ -49,6 +53,8 @@
 * Location
 * Amenities
 
+
+
 ## Property Details Screen
 
 ### Property Image Gallery
@@ -73,6 +79,8 @@
 * Phone Number
 * Email
 
+
+
 ## Chat Screen
 
 ### Chat Header
@@ -90,6 +98,8 @@
 * Image upload
 * Document upload
 
+
+
 ## Login Screen
 
 ### Login Form
@@ -103,6 +113,8 @@
 * Google
 * Facebook
 * Twitter
+
+
 
 ## Signup Screen
 
@@ -123,7 +135,9 @@
 
 * Checkbox for agreeing to terms
 
-## Owner Dashboard
+
+
+## Owner Dashboard Screen
 
 ### Profile Information
 
@@ -141,6 +155,8 @@
 
 * List of inquiries
 * Message thread
+
+
 
 ## Post Property Screen
 
@@ -160,9 +176,11 @@
 
 * Google Maps integration for selecting location
 
-# Renter Dashboard
 
-## Header
+
+## Renter Dashboard Screen
+
+### Header
 
 * Profile Picture
 * Renter Name
@@ -204,9 +222,11 @@
 	+ Property Title
 	+ Last Message
 
-# Agent Dashboard
 
-## Header
+
+## Agent Dashboard Screen
+
+### Header
 
 * Profile Picture
 * Agent Name
@@ -247,15 +267,17 @@
 	+ Property Title
 	+ Last Message
 
-# Find Agent Screen
 
-## Search Bar
+
+## Find Agent Screen
+
+### Search Bar
 
 * Location input field
 * Agent Type dropdown (residential, commercial, etc.)
 * Agent Specialty dropdown (buying, selling, renting, etc.)
 
-## Agent Listings
+### Agent Listings
 
 * Grid layout showcasing agents
 	+ Agent Image
@@ -264,7 +286,7 @@
 	+ Ratings (1-5 stars)
 	+ Contact Information (phone number, email)
 
-## Agent Details
+### Agent Details
 
 * Agent Profile Picture
 * Agent Name
@@ -273,7 +295,7 @@
 * Ratings (1-5 stars)
 * Contact Information (phone number, email)
 
-## Hire Agent Form
+### Hire Agent Form
 
 * Agent Selection dropdown
 * Property Information Form
@@ -282,11 +304,13 @@
 	+ Property Price
 * Message to Agent (optional)
 
-# Agent Profile Screen
 
-## Agent Profile Picture
 
-## Agent Information
+## Agent Profile Screen
+
+### Agent Profile Picture
+
+### Agent Information
 
 * Agent Name
 * Agent Bio
@@ -294,7 +318,7 @@
 * Ratings (1-5 stars)
 * Contact Information (phone number, email)
 
-## Properties Listed
+### Properties Listed
 
 * Grid layout showcasing agent's properties
 	+ Property Image
@@ -302,14 +326,14 @@
 	+ Price
 	+ Location
 
-## Reviews
+### Reviews
 
 * List of reviews from clients
 	+ Client Name
 	+ Review Text
 	+ Rating (1-5 stars)
 
-## Contact Agent
+### Contact Agent
 
 * Contact Form
 	+ Name
@@ -317,41 +341,7 @@
 	+ Phone Number
 	+ Message
 
-# Hire Agent Confirmation Screen
 
-## Confirmation Message
-
-* "You have successfully hired [Agent Name]!"
-
-## Agent Information
-
-* Agent Name
-* Agent Bio
-* Agent Specialty
-* Ratings (1-5 stars)
-* Contact Information (phone number, email)
-
-# Utility Screens 
-
-## Agent Comparison
-
-* Grid layout showcasing 2-3 agents
-	+ Agent Image
-	+ Agent Name
-	+ Agent Bio
-	+ Ratings (1-5 stars)
-	+ Contact Information (phone number, email)
-
-## Property Comparison Screen
-
-### Comparison Grid
-
-* Grid layout showcasing 2-3 properties
-	+ Property Image
-	+ Property Title
-	+ Price
-	+ Location
-	+ Amenities
 
 ## Settings Screen
 
@@ -367,6 +357,8 @@
 * Email Notifications
 * Push Notifications
 
+
+
 ## Support Screen
 
 ### Support Form
@@ -379,6 +371,8 @@
 * Contact Email
 * Phone Number
 
+
+
 ## FAQ Screen
 
 ### Frequently Asked Questions
@@ -386,8 +380,54 @@
 * Question
 * Answer
 
+
+
 ## Terms and Conditions Screen
 
 ### Terms and Conditions Text
 
 * Acceptance Checkbox
+
+
+
+# Utility Sections
+
+## Hire Agent Confirmation Modal
+
+### Confirmation Message
+
+* "You have successfully hired [Agent Name]!"
+
+### Agent Information
+
+* Agent Name
+* Agent Bio
+* Agent Specialty
+* Ratings (1-5 stars)
+* Contact Information (phone number, email)
+
+## Agent Comparison Modal
+
+* Grid layout showcasing 2-3 agents
+	+ Agent Image
+	+ Agent Name
+	+ Agent Bio
+	+ Ratings (1-5 stars)
+	+ Contact Information (phone number, email)
+
+## Agent Review Modal
+
+### Agent Review Form
+
+* After hiring given by clients and owners
+  
+## Property Comparison Modal
+
+### Comparison Grid
+
+* Grid layout showcasing 2-3 properties
+	+ Property Image
+	+ Property Title
+	+ Price
+	+ Location
+	+ Amenities
