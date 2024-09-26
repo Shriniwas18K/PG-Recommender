@@ -29,6 +29,8 @@ Using npm:
 npm install
 ```
 
+##### Note : use VSCODE IDE with plugins of ESLint,Prettier,code-completion (writing p0 gives side-menu with padding:0),and type hinting(hover over any function to see its params expected)
+
 # AVAILABLE SCRIPTS
 ===================
 

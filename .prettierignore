@@ -1,0 +1,24 @@
+# Ignore Markdown files
+*.md
+
+# Ignore public directory
+public/
+
+# Ignore build output
+build/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore specific file
+README.md
+.gitignore
+public/robots.txt
+*.txt
+*.ico
+*.png
+.prettierignore
+
+*.json
+
+src/index.css

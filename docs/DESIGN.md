@@ -19,14 +19,6 @@
 * Subheading: "Search thousands of properties for rent"
 * Call-to-Action (CTA): "Search Properties"
 
-### Featured Properties
-
-* Grid layout showcasing 4-6 properties
-	+ Property Image
-	+ Property Title
-	+ Price
-	+ Location
-
 
 
 ## Search Screen
